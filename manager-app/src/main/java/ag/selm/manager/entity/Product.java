@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class Product {
 
     private Integer id;
@@ -14,4 +13,10 @@ public class Product {
     private String title;
 
     private String details;
+
+    public Product(Integer id, String title, String details) {
+        this.id = id;
+        this.title = title;
+        this.details = details;
+    }
 }
